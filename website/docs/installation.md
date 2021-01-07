@@ -24,8 +24,10 @@ The rRNADif is a bash script, which connects several R and python scripts. There
 4. To install R libraries you can run in terminal `install.packages(c("ape", "dplyr", "tidyr",  "ggplot2"))`(or via `conda install r-ape r-dplyr r-tidyr r-ggplot2`)
 5. To install barrnap, mafft and fasttree you should run `conda install barrnap mafft fasttree`
 6. (optional) To install other software (for MSA or phylogeny) you can run `conda install <name-of-the-package>`, if it is available in anaconda or bioconda repositories. Options within rRNADif are available there, so the install should take only one command (ex. `conda install muscle clustalw iqtree raxml`)
+
+
 :::note
-rrnadif.sh is intended to be run from the script location directory. You can edit ~/.bashrc profile to invoke it from everywhere in your system
+rrnadif.sh is intended to be run from the script location directory. You can edit ~/.bashrc profile to invoke it from everywhere in your system.
 :::
 
 :::warning
@@ -38,6 +40,7 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 sh Miniconda3-latest-Linux-x86_64.sh
 ```
 Then restart the terminal or run `source ~/.bashrc`
+
 2. Configure channels
 ```bash
 conda config --add channels defaults
@@ -46,7 +49,7 @@ conda config --add channels conda-forge
 ```
 3. Install software
 ```bash
-conda create -n rrnadif python=3.8 parallel r-base r-ape r-dplyr r-tidyr r-ggplot2 barrnap mafft fasttree
+conda create -n rrnadif python=3.8 biopython pandas parallel r-base r-ape r-dplyr r-tidyr r-ggplot2 barrnap mafft fasttree
 ```
 4. Activate an environment and run rRNADif under it
 ```bash

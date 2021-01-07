@@ -1,12 +1,12 @@
 module.exports = {
   title: 'rRNADif',
   tagline: 'Make 16S great again',
-  url: 'https://pavlohrab.github.io',
-  baseUrl: '/rRNADif-docs/',
+  url: 'https://ostash-group.github.io',
+  baseUrl: '/rRNADif/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.gif',
-  organizationName: 'pavlohrab', // Usually your GitHub org/user name.
+  organizationName: 'ostash-group', // Usually your GitHub org/user name.
   projectName: 'rRNADif', // Usually your repo name.
   themeConfig: {
     navbar: {
@@ -24,7 +24,7 @@ module.exports = {
         },
 //        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/pavlohrab/rRNADif',
+          href: 'https://github.com/ostash-group/rRNADif',
           label: 'GitHub',
           position: 'right',
         },
@@ -51,7 +51,7 @@ module.exports = {
           items: [
             {
               label: 'Get started',
-              to: 'docs/get_started',
+              to: 'docs/',
             },
           ],
         },
@@ -64,7 +64,7 @@ module.exports = {
 //            },
             {
               label: 'GitHub',
-              href: 'https://github.com/pavlohrab/rRNADif',
+              href: 'https://github.com/ostash-group/rRNADif',
             },
           ],
         },

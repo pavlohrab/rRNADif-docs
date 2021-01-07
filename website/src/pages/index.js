@@ -12,9 +12,9 @@ const features = [
     imageUrl: 'img/undraw_version_control_9bpv.svg',
     description: (
       <>
-        rRNADif will automatically annotate 16S in your genome and compare them 
-        to precomputed database of 21000+ fully sequenced Bacteria genomes. (or 
-        it's subset)
+        rRNADif will automatically annotate 16S in your genome, compute their 
+        variability and compare it to the precomputed database of 21000+ fully 
+        sequenced Bacteria genomes (or it's subset). 
       </>
     ),
   },
@@ -23,9 +23,10 @@ const features = [
     imageUrl: 'img/undraw_Tree_swing_646s.svg',
     description: (
       <>
-        rRNADif lets you not only to measure degree of heterogenuity of 16S rRNA,
-        but also use that information to see to what extend topology of the phylogenetic
-        tree can be altered.
+        rRNADif lets you, using the computed variability, see to what extend 
+        topology of the phylogenetic tree can be altered. Also it is using comperhensive 
+        data from only complete genomes, leading to better species/genus-level 
+        classification of genomes based on their rRNAs
       </>
     ),
   },
@@ -35,7 +36,7 @@ const features = [
     description: (
       <>
         Not happy with provided data? No worries! Built you own databases using
-        csv file from GenBank or locally stored genome sequences.
+        csv file from GenBank or locally stored genome sequences. 
       </>
     ),
   },
@@ -72,7 +73,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/get_started')}>
+              to={useBaseUrl('docs/')}>
               Get Started
             </Link>
           </div>
